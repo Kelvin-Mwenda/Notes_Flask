@@ -1,6 +1,6 @@
-from website import create_app
+from website import create_App
 
-app = create_app()
+app = create_App()
 
 
 if __name__ == '__main__':
