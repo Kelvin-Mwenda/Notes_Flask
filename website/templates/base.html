@@ -21,32 +21,32 @@
         </head>
 
         <body>
-        <nav class="shadow navbar bg-primary navbar-expand-lg navbar-light sticky-top px-4 px-lg-5 text-body-emphasis" data-bs-theme="dark">
-            <button class="navbar-toggler me-0" type="button" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span>
-            </button>
+          <nav class="shadow navbar bg-primary navbar-expand-lg navbar-light sticky-top px-4 px-lg-5 text-body-emphasis" data-bs-theme="dark">
+              <button class="navbar-toggler me-0" type="button" data-toggle="collapse" data-target="#navbar"><span class="navbar-toggler-icon"></span>
+              </button>
 
-            <ul class="nav nav-underline">
-              <div class="collapse navbar-collapse" id="navbar">
-                  <div class="navbar-nav justify-content-center">
-                      {% if user.is_authenticated %}
-                        <li class="nav-item">
-                          <a class="nav-item nav-link text-light" id="home" href="/">Home</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-item nav-link text-light" id="logout" href="/logout">Logout</a>
-                        </li>
-                      {% else %}
-                        <li class="nav-item">
-                          <a class="nav-item nav-link text-light" id="signup" href="/sign-up">Sign Up</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-item nav-link text-light" id="login" href="/login">Login</a>
-                        </li>
-                      {% endif %}
-                  </div>
-              </div>
-            </ul>
-        </nav>
+              <ul class="nav nav-underline">
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav justify-content-center">
+                        {% if user.is_authenticated %}
+                          <li class="nav-item">
+                            <a class="nav-item nav-link text-light" id="home" href="/">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-item nav-link text-light" id="logout" href="/logout">Logout</a>
+                          </li>
+                        {% else %}
+                          <li class="nav-item">
+                            <a class="nav-item nav-link text-light" id="signup" href="/sign-up">Sign Up</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-item nav-link text-light" id="login" href="/login">Login</a>
+                          </li>
+                        {% endif %}
+                    </div>
+                </div>
+              </ul>
+          </nav>
 
           
           
